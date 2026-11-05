@@ -1,0 +1,7 @@
+Built-in image_gen, reference: design-reference-dark.png.
+
+ENCHANTED-FRAME
+Create a single portrait 1024x1536 decorative forest backdrop from the reference's middle/lower outside edges. Preserve fine dark teal ivy, leaves, twisted branches, blue enchanted highlights and sparse amber fireflies along extreme left/right 8-10%. Central 80% empty midnight black teal #001317. Remove all text, logo, buttons, characters, photos, panels, castle and UI borders. Small-scale precise natural silhouette foliage, no blurred forest. Opaque background, no text or watermark.
+
+QUEST-PATH
+Recreate only the enchanted forest at bottom of approved reference as a 3:1 wide background. Preserve dark teal nighttime forest, huge twisted roots on both edges, small blue and warm glowing mushrooms, worn winding stone footpath entering bottom center and receding left of center, delicate arcing golden firefly trail. Keep upper center dark and calm for actual website heading. Remove lettering, logos, buttons, cards, icons, navigation, borders. Detailed cinematic painterly photoreal fantasy atmosphere; no castle, people or watermark.

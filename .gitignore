@@ -1,0 +1,12 @@
+node_modules/
+.next/
+.next-site/
+.next-*/
+*.log
+.env*
+!.env.example
+.vercel/
+.netlify/
+*.tsbuildinfo
+.DS_Store
+Thumbs.db

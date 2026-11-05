@@ -1,0 +1,141 @@
+/* Proportions and artwork measured against design-reference-dark.png (1024 × 1536). */
+:root{--cream:#f4e4c4;--gold:#c5a467;--night:#001317;--display:'Cormorant Garamond',Georgia,serif}
+body{background:#001014}
+h1,h2{font-family:var(--display);font-weight:500;letter-spacing:0}
+.section-wrap{width:86%;max-width:1376px}
+.hero{height:34.2vw;min-height:345px;max-height:550px;background:#001317}
+.hero__image{filter:none;object-position:center;object-fit:cover}
+.hero__veil{background:linear-gradient(0deg,#00131766,transparent 12%);pointer-events:none}
+.site-header{width:86%;max-width:1376px;height:10.5vw;max-height:160px;min-height:102px;gap:2.5vw;align-items:flex-start}
+.brand{width:18.4%;max-width:250px;margin-left:1.8%}
+.brand__logo{height:auto;max-height:150px;aspect-ratio:1.8;object-fit:contain}
+.primary-nav{height:4.1vw;min-height:42px;max-height:65px;gap:2.6vw;font-size:clamp(12px,1.3vw,18px);padding-top:3px;justify-content:space-around}
+.primary-nav a:after{bottom:-11px}
+.header-actions{gap:12px;padding-top:14px;align-items:center;font-size:11px}
+.header-film{display:flex;align-items:center;justify-content:center;gap:7px;min-height:27px;border:1px solid #b9985d;background:#07171bad;box-shadow:inset 0 0 0 2px #041215,inset 0 0 0 3px #7f6840;padding:6px 12px;white-space:nowrap;color:#f1e1bf;font-size:clamp(10px,1vw,14px);transition:box-shadow .25s,background .25s}
+.header-film:hover{background:#45351b;box-shadow:0 0 20px #c5a46744}
+.language-picker summary{padding:5px 0}
+.language-picker__menu{top:35px;z-index:10}
+.hero__content{width:78%;max-width:1248px;margin:1.3vw auto 0}
+.hero__content h1{font-size:clamp(48px,5.25vw,84px);line-height:.83;letter-spacing:-.015em;max-width:31vw;font-weight:500;text-shadow:0 2px 15px #00101388}
+.hero__content .ornament{width:20vw;max-width:300px;margin:1.5vw 0 .8vw}
+.hero__content p{font-size:clamp(15px,1.6vw,25px);margin:0 0 1.4vw;font-family:var(--serif);font-weight:400}
+.gold-button{font-size:clamp(16px,1.7vw,26px);font-family:var(--display);font-weight:600;padding:.6vw 2.8vw;gap:2vw;min-height:35px;letter-spacing:.01em}
+.gold-button span{font-size:22px}
+.enchanted{background:#001317 url('/assets/enchanted-frame.png') center top / 100% 100% no-repeat}
+.enchanted:before{display:none}
+.introduction{grid-template-columns:31.5% 68.5%;gap:0;padding:1.5vw 0 .8vw;min-height:0;border-color:#a89b6f40}
+.intro-copy{padding:0 0 0 1.8vw;z-index:2;margin-right:-15px}
+.intro-copy h2{font-size:clamp(27px,3.4vw,53px);line-height:.92;max-width:31vw;text-wrap:initial}
+.intro-copy p{font-family:var(--serif);font-size:clamp(11px,1.22vw,18px);line-height:1.22;max-width:28vw;padding-left:.8vw}
+.intro-copy .ornament{width:20vw;max-width:260px;margin:1.5vw 0}
+.intro-art{height:18vw;max-height:288px;mask-image:linear-gradient(90deg,transparent,black 14%,black 98%,transparent)}
+.intro-art img{filter:brightness(.88) saturate(1.35);object-position:center 55%}
+.gameplay{grid-template-columns:62% 34%;gap:4%;padding:1.4vw 0 1vw;border-color:#a89b6f40}
+.gilded-frame{padding:0;box-shadow:0 0 16px #0006;border-color:#b9975e}
+.gilded-frame video{aspect-ratio:2.1;object-fit:cover}
+.video-cover{inset:1px;background:transparent}
+.video-cover .play-symbol{opacity:0;transition:opacity .3s}
+.video-cover:hover .play-symbol,.video-cover:focus-visible .play-symbol{opacity:1}
+.gameplay-copy{align-self:start;padding-top:1.5vw}
+.gameplay-copy h2{font-size:clamp(30px,4.1vw,62px);line-height:.85;text-wrap:initial}
+.gameplay-copy .ornament{width:24vw;max-width:340px;margin:1.7vw 0 1.3vw}
+.gameplay-copy p{font-family:var(--serif);font-size:clamp(11px,1.2vw,17px);line-height:1.25}
+.watch-button{font-size:clamp(13px,1.5vw,21px);margin-top:1.6vw;gap:13px}
+.watch-button span{width:4vw;height:4vw;min-width:36px;min-height:36px;max-width:56px;max-height:56px}
+.clip-switch{padding-top:6px;gap:18px}
+.clip-switch button{font-size:10px;padding:0 0 3px}
+.heroes{padding:1.1vw 1.5vw 1.4vw;border-color:#a89b6f40}
+.ruled-title{font-size:clamp(28px,3.65vw,55px);line-height:1;gap:18px;font-weight:400}
+.hero-roster{margin-top:1.6vw;gap:1.3vw}
+.hero-card{aspect-ratio:.69;border-color:#bea068;overflow:visible;background:#001719;box-shadow:none;clip-path:polygon(5% 0,95% 0,95% 2%,100% 4%,100% 96%,95% 98%,95% 100%,5% 100%,5% 98%,0 96%,0 4%,5% 2%)}
+.hero-card:after{content:'';margin:3px;inset:0;border:1px solid #b79d5d33;line-height:normal}
+.hero-card__portrait{position:absolute;inset:0;background-image:url('/assets/hero-portraits.png');background-size:600% 100%;background-repeat:no-repeat;filter:brightness(.93);transition:filter .4s;clip-path:inherit}
+.hero-card:hover .hero-card__portrait,.hero-card:focus-visible .hero-card__portrait{filter:brightness(1.13)}
+.hero-card__veil{background:linear-gradient(0deg,#001217 0%,#001217fa 19%,#001217b3 27%,transparent 43%)}
+.hero-card__copy{bottom:.9vw;left:3px;right:3px}
+.hero-card__copy:before{display:none}
+.hero-card__emblem{display:flex;width:22px;height:22px;align-items:center;justify-content:center;border:1px solid #c9a66b;border-radius:50%;margin:0 auto 5px;background:#021719;color:#d5b56e}
+.hero-card h3{font-family:var(--display);font-size:clamp(11px,1.5vw,21px);letter-spacing:.015em;line-height:.92;max-width:100%;font-weight:500}
+.hero-card p{font-size:clamp(8px,.8vw,11px);letter-spacing:.04em;margin-top:4px;line-height:1.1}
+.world{padding:1vw 0 1.5vw}
+.world .ruled-title{font-size:clamp(28px,3.25vw,50px)}
+.world-intro{font-size:clamp(11px,1.17vw,17px);margin:.5vw auto 1vw;line-height:1.25}
+.world-grid{gap:1.4vw}
+.world-card{aspect-ratio:2.17;border-color:#b9975e}
+.world-card img{filter:brightness(.84) saturate(1.2)}
+.world-card figcaption{font-size:clamp(12px,1.25vw,19px);padding:25px 8px 6px}
+.quest{min-height:0;height:18vw;max-height:288px;padding:1vw 20px 3vw;overflow:visible}
+.quest__image{mask-image:linear-gradient(transparent,black 15%);object-fit:cover;object-position:center bottom;filter:none}
+.quest:after{background:linear-gradient(0deg,#00131766,transparent 20%)}
+.quest h2{font-size:clamp(30px,3.5vw,52px);font-weight:500;line-height:.83}
+.quest .gold-button{margin-top:1.5vw;padding:.4vw 2.6vw;font-size:clamp(15px,1.7vw,25px)}
+.quest__logo{width:13%;max-width:200px;bottom:1.5vw;right:5.5%}
+.site-footer{width:86%;max-width:1376px;padding:12px 0 18px;gap:20px;font-size:10px;border-color:#a89b6f40;background:#001317}
+.site-footer nav{gap:25px}.site-footer small{margin-left:auto;font-size:9px}
+.site-footer p{display:none}
+.motion-toggle{font-size:9px;padding:7px 9px;bottom:8px;right:8px;opacity:.72}.motion-toggle:hover,.motion-toggle:focus-visible{opacity:1}
+.film-dialog{padding:0;border:1px solid #b99b63;background:#001317;color:var(--cream);width:min(1080px,92vw);max-width:none;max-height:94dvh;box-shadow:0 0 80px #000c;overflow:auto}
+.film-dialog::backdrop{background:#000d;backdrop-filter:blur(9px)}
+.film-dialog__heading{display:flex;align-items:center;justify-content:space-between;padding:13px 20px;border-bottom:1px solid #b99b6360}
+.film-dialog__heading h2{font-size:25px;line-height:1.1}.film-dialog__heading button{display:grid;place-items:center;background:none;color:#e8d2a9;width:40px;height:40px}
+.film-dialog video{display:block;width:100%;max-height:76dvh;background:#000;aspect-ratio:16/9;object-fit:contain}
+.film-dialog p{padding:20px;font-size:15px}.film-dialog a{text-decoration:underline}
+[data-locale=ko] h1,[data-locale=ja] h1{font-size:clamp(35px,4vw,64px);line-height:1.1}
+[data-locale=ko] h2,[data-locale=ja] h2{font-size:clamp(22px,2.7vw,42px);line-height:1.15}
+@media(min-width:1600px){.hero__content{margin-top:20px}.hero__content h1{max-width:480px}.introduction{padding:24px 0 13px}.intro-copy h2{max-width:490px}.intro-copy p{max-width:420px}.gameplay{padding:22px 0 16px}.heroes{padding:18px 24px 22px}.world{padding:16px 0 24px}.hero-card__copy{bottom:14px}}
+@media(max-width:1000px) and (min-width:701px){.hero-roster{grid-template-columns:repeat(6,minmax(0,1fr))}.header-actions{gap:8px}.site-header{gap:18px}.primary-nav{gap:15px}.brand{margin-left:0}.hero__content{margin-top:6px}.hero__content h1{max-width:34vw}.hero__content p{font-size:14px}.gameplay-copy{padding-top:8px}.hero-card h3{font-size:13px}.hero-card p{font-size:8px}.hero-card__emblem{width:19px;height:19px;margin-bottom:4px}.quest{height:190px}}
+@media(max-width:700px){
+ .hero{height:590px;min-height:0;max-height:none}.hero__image{object-position:60% center;filter:brightness(.82)}.hero__veil{background:linear-gradient(90deg,#00131799,transparent),linear-gradient(0deg,#001317,transparent 25%)}
+ .site-header{width:90%;height:130px;min-height:0;gap:10px;flex-wrap:wrap;align-content:flex-start}.brand{width:145px;margin:0}.brand__logo{width:145px;height:90px;aspect-ratio:auto}.primary-nav{display:none}.header-actions{margin-left:auto;gap:17px;padding-top:24px}.header-film{position:absolute;right:0;top:74px;font-size:12px;padding:9px 14px;min-height:34px}.mobile-nav{display:block}.mobile-nav__panel{top:119px;z-index:12}.language-picker__menu{top:32px;right:-55px}.hero__content{width:82%;margin-top:36px}.hero__content h1{font-size:59px;max-width:330px;line-height:.86}.hero__content .ornament{width:210px;margin:23px 0 17px}.hero__content p{font-size:16px;max-width:280px;line-height:1.5;margin-bottom:24px}.gold-button{padding:8px 27px;min-height:40px;font-size:22px;gap:25px}.enchanted{background-size:100% 100%}.section-wrap{width:86%}
+ .introduction{display:flex;flex-direction:column;padding:29px 0 4px;gap:0}.intro-copy{padding:0;margin:0}.intro-copy h2{font-size:37px;max-width:310px;line-height:.98}.intro-copy p{font-size:14px;max-width:none;line-height:1.5;padding:0}.intro-copy .ornament{width:200px;margin:19px 0}.intro-art{height:210px;max-height:none;mask-image:linear-gradient(0deg,transparent,black 15%,black 85%,transparent)}
+ .gameplay{display:flex;flex-direction:column;gap:23px;padding:24px 0 28px}.gameplay-copy{padding-top:0}.gameplay-copy h2{font-size:39px;max-width:320px;line-height:.95}.gameplay-copy p{font-size:14px;line-height:1.5}.gameplay-copy .ornament{width:210px;margin:20px 0}.watch-button{font-size:16px;gap:15px;margin-top:18px}.watch-button span{width:42px;height:42px}.clip-switch{padding-top:12px;gap:24px}.clip-switch button{font-size:11px}.video-cover .play-symbol{opacity:1}.gilded-frame video{aspect-ratio:16/9}
+ .heroes{padding:25px 0 30px}.ruled-title{font-size:34px;line-height:1;gap:10px}.hero-roster{grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-top:23px}.hero-card{aspect-ratio:.66}.hero-card__copy{bottom:12px}.hero-card__emblem{width:23px;height:23px;margin-bottom:7px}.hero-card h3{font-size:18px}.hero-card p{font-size:9px;margin-top:5px}.world{padding:25px 0 15px}.world .ruled-title{font-size:33px}.world-intro{font-size:14px;line-height:1.4;margin:12px 0 21px}.world-grid{grid-template-columns:1fr;gap:18px}.world-card{aspect-ratio:2.17}.world-card figcaption{font-size:17px;padding-bottom:10px}
+ .quest{height:320px;max-height:none;padding:27px 20px 85px}.quest h2{font-size:34px;line-height:.95}.quest .gold-button{font-size:21px;padding:8px 27px;margin-top:20px}.quest__image{object-position:center;mask-image:linear-gradient(transparent,black 13%);object-fit:cover}.quest__logo{width:120px;right:50%;bottom:0;transform:translateX(50%)}.site-footer{justify-content:center;padding:18px 0 55px;gap:17px}.site-footer nav{gap:20px}.site-footer small{margin:0;width:100%;text-align:center}.film-dialog{width:96vw}.film-dialog__heading{padding:8px 12px}.film-dialog__heading h2{font-size:22px}.film-dialog__heading button{width:44px;height:44px}.film-dialog video{min-height:220px}.motion-toggle{font-size:8px}
+ [data-locale=ko] .hero__content h1,[data-locale=ja] .hero__content h1{font-size:42px;line-height:1.15;max-width:300px}[data-locale=ko] h2,[data-locale=ja] h2{font-size:29px;max-width:none;line-height:1.2}
+}
+/* The promotional film stays visible in the hero, alongside the approved artwork. */
+.hero-film{position:absolute;right:7.5%;top:10.2vw;width:43%;max-width:670px;z-index:2}
+.hero-film__frame{padding:4px;background:#001216b3;border:1px solid #c1a46a;box-shadow:0 10px 45px #0008,inset 0 0 0 1px #c1a46a33}
+.hero-film video{width:100%;display:block;aspect-ratio:16/9;object-fit:contain;background:#001317}
+.hero-film figcaption{text-align:center;font-style:italic;font-size:clamp(12px,1.25vw,18px);color:#edddbc;padding-top:8px;text-shadow:0 1px 10px #000}
+.hero-film__frame:hover{border-color:#ebc88b}
+.gilded-frame video{object-fit:fill}
+.skip-link{visibility:hidden}.skip-link:focus{visibility:visible}
+@media(min-width:1600px){.hero-film{top:150px;right:calc((100% - 1376px)/2)}}
+@media(min-width:701px) and (max-width:1100px){.hero-film{top:11.5vw;width:44%;right:6%}.hero__content h1{max-width:35vw}.hero__content p{max-width:35vw;font-size:14px}.hero-film figcaption{font-size:12px}}
+@media(max-width:700px){.hero{height:auto;min-height:780px;padding-bottom:32px}.hero__image{object-position:60% top}.hero__content{margin-top:25px}.hero-film{position:relative;top:auto;right:auto;width:86%;max-width:none;margin:32px auto 0}.hero-film figcaption{font-size:14px;padding-top:9px}.hero-film__frame{padding:3px}.gilded-frame video{object-fit:contain}}
+@media(min-width:701px){.hero-film{width:39%;top:8.7vw;right:7.5%}}
+@media(min-width:1600px){.hero-film{top:139px;right:calc((100% - 1376px)/2)}}
+@media(max-width:700px){.hero{min-height:690px}}
+.skip-link{visibility:visible;clip-path:inset(100%);width:1px;height:1px;overflow:hidden;white-space:nowrap}.skip-link:focus{clip-path:none;width:auto;height:auto;overflow:visible}
+
+/* A viewport-height opening with copy and film centered below the navigation. */
+.hero{height:90vh;height:90svh;min-height:560px;max-height:none;display:grid;grid-template-columns:44% 56%;grid-template-rows:auto 1fr;padding-bottom:4vh}
+.site-header{grid-column:1 / -1;grid-row:1}
+.hero__content{grid-column:1;grid-row:2;align-self:center;width:75%;max-width:none;margin:0 0 0 25%}
+.hero-film{grid-column:2;grid-row:2;position:relative;align-self:center;top:auto;right:auto;width:69.65%;max-width:670px;margin:0 0 0 17%}
+@media(max-width:700px){
+ .hero{height:auto;min-height:90vh;min-height:90svh;display:flex;flex-direction:column;padding-bottom:32px}
+ .site-header{flex-shrink:0}
+ .hero__content{width:82%;margin:24px auto 0;margin-top:max(24px,calc((90svh - 650px)/2))}
+ .hero-film{width:86%;max-width:none;top:auto;right:auto;margin:32px auto auto;flex-shrink:0}
+}
+
+/* Engraved gold frame: transparent raster artwork leaves the player controls usable. */
+.hero-film__frame{position:relative;padding:10px;border:0;background:#001317;box-shadow:0 18px 55px #0009,0 0 24px #c4a36320}
+.hero-film__frame::after{content:'';position:absolute;inset:0;z-index:2;pointer-events:none;background:url('/assets/video-luxury-frame.png') center / 100% 100% no-repeat;filter:drop-shadow(0 0 6px #dbb36544)}
+.hero-film__frame:hover{box-shadow:0 18px 55px #0009,0 0 30px #c4a36338}
+.hero-film figcaption{padding-top:14px}
+@media(max-width:700px){.hero-film__frame{padding:8px}.hero-film figcaption{padding-top:12px}}
+
+/* Launch date is centralized in lib/release.js and shared by all five languages. */
+.release-countdown{max-width:360px;margin-top:28px;color:#ead6a8}
+.hero__content .release-countdown__title{font-family:var(--serif);font-size:11px;font-style:normal;line-height:1.4;letter-spacing:.1em;text-transform:uppercase;max-width:none;margin:0 0 10px}
+.release-countdown__clock{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));padding:10px 0;border-block:1px solid #c5a46755}
+.release-countdown__unit{display:flex;flex-direction:column;align-items:center;gap:4px;border-right:1px solid #c5a46735}
+.release-countdown__unit:last-child{border-right:0}
+.release-countdown__number{font-family:var(--display);font-variant-numeric:tabular-nums;font-size:42px;font-weight:500;line-height:1;color:#fae7bc;text-shadow:0 0 18px #e8b45b22;min-width:2ch;text-align:center}
+.release-countdown__label{font-size:9px;letter-spacing:.04em;text-transform:uppercase;line-height:1.4}
+.release-countdown__date{display:block;margin-top:9px;font-size:13px;font-style:italic;color:#d7c7a6;text-align:center}
+@media(max-width:700px){.release-countdown{max-width:330px;margin-top:24px}.release-countdown__number{font-size:37px}.hero__content .release-countdown__title{font-size:10px}.hero__content{margin-top:24px}.hero{padding-bottom:30px}}
